@@ -1,0 +1,165 @@
+﻿#include "pch-c.h"
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+extern void AnchorCreator_get_AnchorPrefab_mBBAF7805E9D9F8D79408EE642D153BC76306B25A (void);
+extern void AnchorCreator_set_AnchorPrefab_m53CC9CC3022C713826B44536B48B462C8A1FACFF (void);
+extern void AnchorCreator_RemoveAllAnchors_m6BA302DD9EECA47969FD3F6E5397441DCB09ED21 (void);
+extern void AnchorCreator_Awake_m8820A3F157354D7EDED7B2D7CE2BFA42844F1F8E (void);
+extern void AnchorCreator_Update_mA0A8BCCBAB0AE50DB087524E6273D11F1D6456D0 (void);
+extern void AnchorCreator__ctor_m702B01425680D7FD1C9272A423AAF8A913E5476E (void);
+extern void AnchorCreator__cctor_mDE519BED5D639DA8CD4FA7E389C3D97DF4BA54C4 (void);
+extern void ARFeatheredPlaneMeshVisualizer_get_featheringWidth_m14D3A8BE3E9A745E6FD525B19ADDC892B8399B4D (void);
+extern void ARFeatheredPlaneMeshVisualizer_set_featheringWidth_mD616A09A3B426EA5DE1FA37334DD194E43EEC110 (void);
+extern void ARFeatheredPlaneMeshVisualizer_Awake_mC5DB0414A2514BF4851266C25141C903F0AC57BA (void);
+extern void ARFeatheredPlaneMeshVisualizer_OnEnable_m8781C85CFED871C8A81A5B88DB1031856E0FC9F0 (void);
+extern void ARFeatheredPlaneMeshVisualizer_OnDisable_m2343B05B1A8F14BAD4DD516C584281B66FE6A4E8 (void);
+extern void ARFeatheredPlaneMeshVisualizer_ARPlane_boundaryUpdated_mB3D9BBD14EA1FE3ECDBACC2DB89C1B110B8B6B5F (void);
+extern void ARFeatheredPlaneMeshVisualizer_GenerateBoundaryUVs_mF756D3C1F7925A69CD8C7C8CCE56209AB321FEF5 (void);
+extern void ARFeatheredPlaneMeshVisualizer__ctor_m9A77651BCAE58AA0B994FFF6C6B63B1CFF2729F6 (void);
+extern void ARFeatheredPlaneMeshVisualizer__cctor_m56285A000EE27A1631BE9C5BCDA5C376E5D133C3 (void);
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
+extern void TrackedImageInfoManager_get_worldSpaceCanvasCamera_mC11687E80FF28DE24557852CDAAA5B2D53FE3184 (void);
+extern void TrackedImageInfoManager_set_worldSpaceCanvasCamera_m7231AF7F1C32E7970D872FC86F631623AD9CB3FA (void);
+extern void TrackedImageInfoManager_get_defaultTexture_mD7429D833FB22A14F756B7209B20C932387FF258 (void);
+extern void TrackedImageInfoManager_set_defaultTexture_m1CCBB2B2369388964FF6EFF7D9B99384BEA75367 (void);
+extern void TrackedImageInfoManager_Awake_m1D86DC6B7CF92F0B20AFD1CE052686E3DB706581 (void);
+extern void TrackedImageInfoManager_OnEnable_m8EA5399AA290ABDA4E9EE7ED161D82E270159A05 (void);
+extern void TrackedImageInfoManager_OnDisable_m2D99FD64E0881C34DBB762F57B23F8F8C2A5D552 (void);
+extern void TrackedImageInfoManager_UpdateInfo_m82D29BB9901D25E902876634D063B9FC857F1887 (void);
+extern void TrackedImageInfoManager_OnTrackedImagesChanged_mBB2EB9EA971DD8B3B71C930E78BBA5435AA518D2 (void);
+extern void TrackedImageInfoManager__ctor_m9A2B98DD5BFE65B8D2D590B8649C1CFD41D7E365 (void);
+extern void DynamicLibrary_get_images_mA6E8120CCBA72A758F9A307B3D2244C670936707 (void);
+extern void DynamicLibrary_set_images_m7733576CCBA469C465F40D50785931B2715D57CF (void);
+extern void DynamicLibrary_OnGUI_m3D95BF88233CD4BB40E12A2CAEDE887253DEE527 (void);
+extern void DynamicLibrary_SetError_mBED7A80C0B91A022B92E8FC13D79B6AE2B5C01E9 (void);
+extern void DynamicLibrary_Update_mE124600A536C285376F68671BD4A8CEC64E01312 (void);
+extern void DynamicLibrary__ctor_mF334F65496B4E123F08C9489ACF42FEAB4384382 (void);
+extern void ImageData_get_texture_mD8925958213E39066F03F50C9F0A2D2E1DAC7153 (void);
+extern void ImageData_set_texture_m7C2FBF0D69D339F4140CB3160593139E4B743582 (void);
+extern void ImageData_get_name_m4F62D719167D5B50A18B10B9E63FA4DB5CA5BE6B (void);
+extern void ImageData_set_name_m1F2D8B4695ABFFB91247E0B49EA9EAB45E97749E (void);
+extern void ImageData_get_width_mB213A44595BBE38E03E5EE32301E909685EA22BA (void);
+extern void ImageData_set_width_mC968A431846261AD5223C09D4C949C14B47A9877 (void);
+extern void ImageData_get_jobState_m4AB1D28431032F5FE527A7BD5C969E3E5B79B08E (void);
+extern void ImageData_set_jobState_m3FBBB73A3C14C1843E57314697488C2264426C3A (void);
+extern void ImageData__ctor_m5D5434D4BF8B26A13EFE81E5DE6C689F8EEB88B7 (void);
+static Il2CppMethodPointer s_methodPointers[43] = 
+{
+	AnchorCreator_get_AnchorPrefab_mBBAF7805E9D9F8D79408EE642D153BC76306B25A,
+	AnchorCreator_set_AnchorPrefab_m53CC9CC3022C713826B44536B48B462C8A1FACFF,
+	AnchorCreator_RemoveAllAnchors_m6BA302DD9EECA47969FD3F6E5397441DCB09ED21,
+	AnchorCreator_Awake_m8820A3F157354D7EDED7B2D7CE2BFA42844F1F8E,
+	AnchorCreator_Update_mA0A8BCCBAB0AE50DB087524E6273D11F1D6456D0,
+	AnchorCreator__ctor_m702B01425680D7FD1C9272A423AAF8A913E5476E,
+	AnchorCreator__cctor_mDE519BED5D639DA8CD4FA7E389C3D97DF4BA54C4,
+	ARFeatheredPlaneMeshVisualizer_get_featheringWidth_m14D3A8BE3E9A745E6FD525B19ADDC892B8399B4D,
+	ARFeatheredPlaneMeshVisualizer_set_featheringWidth_mD616A09A3B426EA5DE1FA37334DD194E43EEC110,
+	ARFeatheredPlaneMeshVisualizer_Awake_mC5DB0414A2514BF4851266C25141C903F0AC57BA,
+	ARFeatheredPlaneMeshVisualizer_OnEnable_m8781C85CFED871C8A81A5B88DB1031856E0FC9F0,
+	ARFeatheredPlaneMeshVisualizer_OnDisable_m2343B05B1A8F14BAD4DD516C584281B66FE6A4E8,
+	ARFeatheredPlaneMeshVisualizer_ARPlane_boundaryUpdated_mB3D9BBD14EA1FE3ECDBACC2DB89C1B110B8B6B5F,
+	ARFeatheredPlaneMeshVisualizer_GenerateBoundaryUVs_mF756D3C1F7925A69CD8C7C8CCE56209AB321FEF5,
+	ARFeatheredPlaneMeshVisualizer__ctor_m9A77651BCAE58AA0B994FFF6C6B63B1CFF2729F6,
+	ARFeatheredPlaneMeshVisualizer__cctor_m56285A000EE27A1631BE9C5BCDA5C376E5D133C3,
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
+	TrackedImageInfoManager_get_worldSpaceCanvasCamera_mC11687E80FF28DE24557852CDAAA5B2D53FE3184,
+	TrackedImageInfoManager_set_worldSpaceCanvasCamera_m7231AF7F1C32E7970D872FC86F631623AD9CB3FA,
+	TrackedImageInfoManager_get_defaultTexture_mD7429D833FB22A14F756B7209B20C932387FF258,
+	TrackedImageInfoManager_set_defaultTexture_m1CCBB2B2369388964FF6EFF7D9B99384BEA75367,
+	TrackedImageInfoManager_Awake_m1D86DC6B7CF92F0B20AFD1CE052686E3DB706581,
+	TrackedImageInfoManager_OnEnable_m8EA5399AA290ABDA4E9EE7ED161D82E270159A05,
+	TrackedImageInfoManager_OnDisable_m2D99FD64E0881C34DBB762F57B23F8F8C2A5D552,
+	TrackedImageInfoManager_UpdateInfo_m82D29BB9901D25E902876634D063B9FC857F1887,
+	TrackedImageInfoManager_OnTrackedImagesChanged_mBB2EB9EA971DD8B3B71C930E78BBA5435AA518D2,
+	TrackedImageInfoManager__ctor_m9A2B98DD5BFE65B8D2D590B8649C1CFD41D7E365,
+	DynamicLibrary_get_images_mA6E8120CCBA72A758F9A307B3D2244C670936707,
+	DynamicLibrary_set_images_m7733576CCBA469C465F40D50785931B2715D57CF,
+	DynamicLibrary_OnGUI_m3D95BF88233CD4BB40E12A2CAEDE887253DEE527,
+	DynamicLibrary_SetError_mBED7A80C0B91A022B92E8FC13D79B6AE2B5C01E9,
+	DynamicLibrary_Update_mE124600A536C285376F68671BD4A8CEC64E01312,
+	DynamicLibrary__ctor_mF334F65496B4E123F08C9489ACF42FEAB4384382,
+	ImageData_get_texture_mD8925958213E39066F03F50C9F0A2D2E1DAC7153,
+	ImageData_set_texture_m7C2FBF0D69D339F4140CB3160593139E4B743582,
+	ImageData_get_name_m4F62D719167D5B50A18B10B9E63FA4DB5CA5BE6B,
+	ImageData_set_name_m1F2D8B4695ABFFB91247E0B49EA9EAB45E97749E,
+	ImageData_get_width_mB213A44595BBE38E03E5EE32301E909685EA22BA,
+	ImageData_set_width_mC968A431846261AD5223C09D4C949C14B47A9877,
+	ImageData_get_jobState_m4AB1D28431032F5FE527A7BD5C969E3E5B79B08E,
+	ImageData_set_jobState_m3FBBB73A3C14C1843E57314697488C2264426C3A,
+	ImageData__ctor_m5D5434D4BF8B26A13EFE81E5DE6C689F8EEB88B7,
+};
+static const int32_t s_InvokerIndices[43] = 
+{
+	6471,
+	5189,
+	6581,
+	6581,
+	6581,
+	6581,
+	10027,
+	6516,
+	5224,
+	6581,
+	6581,
+	6581,
+	5049,
+	5189,
+	6581,
+	10027,
+	10047,
+	6581,
+	6471,
+	5189,
+	6471,
+	5189,
+	6581,
+	6581,
+	6581,
+	5189,
+	5060,
+	6581,
+	6471,
+	5189,
+	6581,
+	5189,
+	6581,
+	6581,
+	6471,
+	5189,
+	6471,
+	5189,
+	6516,
+	5224,
+	6341,
+	5063,
+	6581,
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
+const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
+{
+	"Assembly-CSharp.dll",
+	43,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+};
