@@ -22,6 +22,13 @@ namespace UnityEngine.XR.ARFoundation.Samples
         /// The prefab has a world space UI canvas,
         /// which requires a camera to function properly.
         /// </summary>
+
+        public GameObject prefabForTrackedImage;
+
+        /// <summary>
+        /// The camera to set on the world space UI canvas for each instantiated image info.
+        /// </summary>
+        
         public Camera worldSpaceCanvasCamera
         {
             get { return m_WorldSpaceCanvasCamera; }
@@ -81,10 +88,11 @@ namespace UnityEngine.XR.ARFoundation.Samples
             // Disable the visual plane if it is not being tracked
             if (trackedImage.trackingState != TrackingState.None)
             {
-                planeGo.SetActive(true);
+                Instantiate(prefabForTrackedImage, trackedImage.transform.position, transform.rotation);
+                //planeGo.SetActive(true);
 
                 // The image extents is only valid when the image is being tracked
-                trackedImage.transform.localScale = new Vector3(trackedImage.size.x, 1f, trackedImage.size.y);
+                //trackedImage.transform.localScale = new Vector3(trackedImage.size.x, 1f, trackedImage.size.y);
 
                 // Set the texture
                 var material = planeGo.GetComponentInChildren<MeshRenderer>().material;
