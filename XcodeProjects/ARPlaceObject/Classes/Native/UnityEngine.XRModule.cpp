@@ -132,7 +132,6 @@ struct XRMeshSubsystem_tDDC31EC10D4F0517542F9EB296428A0F7EC2C3B2;
 // UnityEngine.XR.XRMeshSubsystemDescriptor
 struct XRMeshSubsystemDescriptor_tD9814661B8661C69D5A0DBB76C9AF61778B9CEC1;
 
-IL2CPP_EXTERN_C RuntimeClass* Action_1_tC867D66471C553CFFF8707FF2C59FB7AAB03086A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Action_1_tFAB0B519749BBE2B7AAD946105FAE8116636A8BC_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129_il2cpp_TypeInfo_var;
@@ -2088,10 +2087,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRNodeState_TryGetPosition_mC17C5DFEEA40
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRNodeState_TryGet_m3EC1CBB3B6B823611B82073139949C041CE7C616 (XRNodeState_t683158812A1D80A6BC73DB97405BB0B795A9111A* __this, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___0_inValue, int32_t ___1_availabilityFlag, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974* ___2_outValue, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.XR.XRNodeState::TryGetRotation(UnityEngine.Quaternion&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRNodeState_TryGetRotation_mA7F9597BE3AFE747BF2F95BF491779520FEF7301 (XRNodeState_t683158812A1D80A6BC73DB97405BB0B795A9111A* __this, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974* ___0_rotation, const RuntimeMethod* method) ;
-// System.Boolean UnityEngine.XR.XRNodeState::TryGetAngularVelocity(UnityEngine.Vector3&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRNodeState_TryGetAngularVelocity_mB7C1D0876373441A07815A8CCB1FC05C11729176 (XRNodeState_t683158812A1D80A6BC73DB97405BB0B795A9111A* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___0_angularVelocity, const RuntimeMethod* method) ;
-// System.Boolean UnityEngine.XR.XRNodeState::TryGetAngularAcceleration(UnityEngine.Vector3&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRNodeState_TryGetAngularAcceleration_m9D4FF5411CFB801471802F8A084B4333C62F4C04 (XRNodeState_t683158812A1D80A6BC73DB97405BB0B795A9111A* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___0_angularAcceleration, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 UnityEngine.Vector3::get_zero()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline (const RuntimeMethod* method) ;
 // UnityEngine.Quaternion UnityEngine.Quaternion::get_identity()
@@ -2622,15 +2617,6 @@ IL_0093:
 		return;
 	}
 }
-// System.Void UnityEngine.XR.InputTracking::Recenter()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputTracking_Recenter_m1843AECFE9093882149E6B197E6EFEB6151E6C7C (const RuntimeMethod* method) 
-{
-	typedef void (*InputTracking_Recenter_m1843AECFE9093882149E6B197E6EFEB6151E6C7C_ftn) ();
-	static InputTracking_Recenter_m1843AECFE9093882149E6B197E6EFEB6151E6C7C_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (InputTracking_Recenter_m1843AECFE9093882149E6B197E6EFEB6151E6C7C_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.XR.InputTracking::Recenter()");
-	_il2cpp_icall_func();
-}
 // System.Void UnityEngine.XR.InputTracking::GetNodeStates(System.Collections.Generic.List`1<UnityEngine.XR.XRNodeState>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputTracking_GetNodeStates_mA2E8D154A47C817ED74AD42F6B38A9C906A57A67 (List_1_t8AE5A65CCFBC753343962D38B82C801F7BDE3C87* ___0_nodeStates, const RuntimeMethod* method) 
 {
@@ -2836,62 +2822,6 @@ IL2CPP_EXTERN_C  bool XRNodeState_TryGetRotation_mA7F9597BE3AFE747BF2F95BF491779
 	_thisAdjusted = reinterpret_cast<XRNodeState_t683158812A1D80A6BC73DB97405BB0B795A9111A*>(__this + _offset);
 	bool _returnValue;
 	_returnValue = XRNodeState_TryGetRotation_mA7F9597BE3AFE747BF2F95BF491779520FEF7301(_thisAdjusted, ___0_rotation, method);
-	return _returnValue;
-}
-// System.Boolean UnityEngine.XR.XRNodeState::TryGetAngularVelocity(UnityEngine.Vector3&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRNodeState_TryGetAngularVelocity_mB7C1D0876373441A07815A8CCB1FC05C11729176 (XRNodeState_t683158812A1D80A6BC73DB97405BB0B795A9111A* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___0_angularVelocity, const RuntimeMethod* method) 
-{
-	bool V_0 = false;
-	{
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = __this->___m_AngularVelocity_5;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_1 = ___0_angularVelocity;
-		bool L_2;
-		L_2 = XRNodeState_TryGet_m6C1D3FC5E773BC5E134F37815FB08839489F5630(__this, L_0, 8, L_1, NULL);
-		V_0 = L_2;
-		goto IL_0012;
-	}
-
-IL_0012:
-	{
-		bool L_3 = V_0;
-		return L_3;
-	}
-}
-IL2CPP_EXTERN_C  bool XRNodeState_TryGetAngularVelocity_mB7C1D0876373441A07815A8CCB1FC05C11729176_AdjustorThunk (RuntimeObject* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___0_angularVelocity, const RuntimeMethod* method)
-{
-	XRNodeState_t683158812A1D80A6BC73DB97405BB0B795A9111A* _thisAdjusted;
-	int32_t _offset = 1;
-	_thisAdjusted = reinterpret_cast<XRNodeState_t683158812A1D80A6BC73DB97405BB0B795A9111A*>(__this + _offset);
-	bool _returnValue;
-	_returnValue = XRNodeState_TryGetAngularVelocity_mB7C1D0876373441A07815A8CCB1FC05C11729176(_thisAdjusted, ___0_angularVelocity, method);
-	return _returnValue;
-}
-// System.Boolean UnityEngine.XR.XRNodeState::TryGetAngularAcceleration(UnityEngine.Vector3&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRNodeState_TryGetAngularAcceleration_m9D4FF5411CFB801471802F8A084B4333C62F4C04 (XRNodeState_t683158812A1D80A6BC73DB97405BB0B795A9111A* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___0_angularAcceleration, const RuntimeMethod* method) 
-{
-	bool V_0 = false;
-	{
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = __this->___m_AngularAcceleration_7;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_1 = ___0_angularAcceleration;
-		bool L_2;
-		L_2 = XRNodeState_TryGet_m6C1D3FC5E773BC5E134F37815FB08839489F5630(__this, L_0, ((int32_t)32), L_1, NULL);
-		V_0 = L_2;
-		goto IL_0013;
-	}
-
-IL_0013:
-	{
-		bool L_3 = V_0;
-		return L_3;
-	}
-}
-IL2CPP_EXTERN_C  bool XRNodeState_TryGetAngularAcceleration_m9D4FF5411CFB801471802F8A084B4333C62F4C04_AdjustorThunk (RuntimeObject* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___0_angularAcceleration, const RuntimeMethod* method)
-{
-	XRNodeState_t683158812A1D80A6BC73DB97405BB0B795A9111A* _thisAdjusted;
-	int32_t _offset = 1;
-	_thisAdjusted = reinterpret_cast<XRNodeState_t683158812A1D80A6BC73DB97405BB0B795A9111A*>(__this + _offset);
-	bool _returnValue;
-	_returnValue = XRNodeState_TryGetAngularAcceleration_m9D4FF5411CFB801471802F8A084B4333C62F4C04(_thisAdjusted, ___0_angularAcceleration, method);
 	return _returnValue;
 }
 // System.Boolean UnityEngine.XR.XRNodeState::TryGet(UnityEngine.Vector3,UnityEngine.XR.AvailableTrackingData,UnityEngine.Vector3&)
@@ -5302,132 +5232,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRDisplaySubsystemDescriptor__ctor_mB9B2
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Boolean UnityEngine.XR.XRInputSubsystem::TryRecenter()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRInputSubsystem_TryRecenter_m4F8888E40ED79139DCB81D56A67C03B4D931A6BB (XRInputSubsystem_tFECE6683FCAEBF05BAD05E5D612690095D8BAD34* __this, const RuntimeMethod* method) 
-{
-	typedef bool (*XRInputSubsystem_TryRecenter_m4F8888E40ED79139DCB81D56A67C03B4D931A6BB_ftn) (XRInputSubsystem_tFECE6683FCAEBF05BAD05E5D612690095D8BAD34*);
-	static XRInputSubsystem_TryRecenter_m4F8888E40ED79139DCB81D56A67C03B4D931A6BB_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (XRInputSubsystem_TryRecenter_m4F8888E40ED79139DCB81D56A67C03B4D931A6BB_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.XR.XRInputSubsystem::TryRecenter()");
-	bool icallRetVal = _il2cpp_icall_func(__this);
-	return icallRetVal;
-}
-// System.Boolean UnityEngine.XR.XRInputSubsystem::TrySetTrackingOriginMode(UnityEngine.XR.TrackingOriginModeFlags)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRInputSubsystem_TrySetTrackingOriginMode_m132C190CEAE4403A381BF1C1C4B5FF349F2A3FA7 (XRInputSubsystem_tFECE6683FCAEBF05BAD05E5D612690095D8BAD34* __this, int32_t ___0_origin, const RuntimeMethod* method) 
-{
-	typedef bool (*XRInputSubsystem_TrySetTrackingOriginMode_m132C190CEAE4403A381BF1C1C4B5FF349F2A3FA7_ftn) (XRInputSubsystem_tFECE6683FCAEBF05BAD05E5D612690095D8BAD34*, int32_t);
-	static XRInputSubsystem_TrySetTrackingOriginMode_m132C190CEAE4403A381BF1C1C4B5FF349F2A3FA7_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (XRInputSubsystem_TrySetTrackingOriginMode_m132C190CEAE4403A381BF1C1C4B5FF349F2A3FA7_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.XR.XRInputSubsystem::TrySetTrackingOriginMode(UnityEngine.XR.TrackingOriginModeFlags)");
-	bool icallRetVal = _il2cpp_icall_func(__this, ___0_origin);
-	return icallRetVal;
-}
-// UnityEngine.XR.TrackingOriginModeFlags UnityEngine.XR.XRInputSubsystem::GetTrackingOriginMode()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t XRInputSubsystem_GetTrackingOriginMode_mBAFED615F74039A681825BB956AD3C8FA7DE45F2 (XRInputSubsystem_tFECE6683FCAEBF05BAD05E5D612690095D8BAD34* __this, const RuntimeMethod* method) 
-{
-	typedef int32_t (*XRInputSubsystem_GetTrackingOriginMode_mBAFED615F74039A681825BB956AD3C8FA7DE45F2_ftn) (XRInputSubsystem_tFECE6683FCAEBF05BAD05E5D612690095D8BAD34*);
-	static XRInputSubsystem_GetTrackingOriginMode_mBAFED615F74039A681825BB956AD3C8FA7DE45F2_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (XRInputSubsystem_GetTrackingOriginMode_mBAFED615F74039A681825BB956AD3C8FA7DE45F2_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.XR.XRInputSubsystem::GetTrackingOriginMode()");
-	int32_t icallRetVal = _il2cpp_icall_func(__this);
-	return icallRetVal;
-}
-// UnityEngine.XR.TrackingOriginModeFlags UnityEngine.XR.XRInputSubsystem::GetSupportedTrackingOriginModes()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t XRInputSubsystem_GetSupportedTrackingOriginModes_mBA7190E84E6BB4F251C232B97565E228AECB3018 (XRInputSubsystem_tFECE6683FCAEBF05BAD05E5D612690095D8BAD34* __this, const RuntimeMethod* method) 
-{
-	typedef int32_t (*XRInputSubsystem_GetSupportedTrackingOriginModes_mBA7190E84E6BB4F251C232B97565E228AECB3018_ftn) (XRInputSubsystem_tFECE6683FCAEBF05BAD05E5D612690095D8BAD34*);
-	static XRInputSubsystem_GetSupportedTrackingOriginModes_mBA7190E84E6BB4F251C232B97565E228AECB3018_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (XRInputSubsystem_GetSupportedTrackingOriginModes_mBA7190E84E6BB4F251C232B97565E228AECB3018_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.XR.XRInputSubsystem::GetSupportedTrackingOriginModes()");
-	int32_t icallRetVal = _il2cpp_icall_func(__this);
-	return icallRetVal;
-}
-// System.Void UnityEngine.XR.XRInputSubsystem::add_trackingOriginUpdated(System.Action`1<UnityEngine.XR.XRInputSubsystem>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInputSubsystem_add_trackingOriginUpdated_mA5E69767B6E8D505BE73804A4B4EA738A27F675E (XRInputSubsystem_tFECE6683FCAEBF05BAD05E5D612690095D8BAD34* __this, Action_1_tC867D66471C553CFFF8707FF2C59FB7AAB03086A* ___0_value, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_tC867D66471C553CFFF8707FF2C59FB7AAB03086A_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	Action_1_tC867D66471C553CFFF8707FF2C59FB7AAB03086A* V_0 = NULL;
-	Action_1_tC867D66471C553CFFF8707FF2C59FB7AAB03086A* V_1 = NULL;
-	Action_1_tC867D66471C553CFFF8707FF2C59FB7AAB03086A* V_2 = NULL;
-	{
-		Action_1_tC867D66471C553CFFF8707FF2C59FB7AAB03086A* L_0 = __this->___trackingOriginUpdated_2;
-		V_0 = L_0;
-	}
-
-IL_0007:
-	{
-		Action_1_tC867D66471C553CFFF8707FF2C59FB7AAB03086A* L_1 = V_0;
-		V_1 = L_1;
-		Action_1_tC867D66471C553CFFF8707FF2C59FB7AAB03086A* L_2 = V_1;
-		Action_1_tC867D66471C553CFFF8707FF2C59FB7AAB03086A* L_3 = ___0_value;
-		Delegate_t* L_4;
-		L_4 = Delegate_Combine_m1F725AEF318BE6F0426863490691A6F4606E7D00(L_2, L_3, NULL);
-		V_2 = ((Action_1_tC867D66471C553CFFF8707FF2C59FB7AAB03086A*)Castclass((RuntimeObject*)L_4, Action_1_tC867D66471C553CFFF8707FF2C59FB7AAB03086A_il2cpp_TypeInfo_var));
-		Action_1_tC867D66471C553CFFF8707FF2C59FB7AAB03086A** L_5 = (&__this->___trackingOriginUpdated_2);
-		Action_1_tC867D66471C553CFFF8707FF2C59FB7AAB03086A* L_6 = V_2;
-		Action_1_tC867D66471C553CFFF8707FF2C59FB7AAB03086A* L_7 = V_1;
-		Action_1_tC867D66471C553CFFF8707FF2C59FB7AAB03086A* L_8;
-		L_8 = InterlockedCompareExchangeImpl<Action_1_tC867D66471C553CFFF8707FF2C59FB7AAB03086A*>(L_5, L_6, L_7);
-		V_0 = L_8;
-		Action_1_tC867D66471C553CFFF8707FF2C59FB7AAB03086A* L_9 = V_0;
-		Action_1_tC867D66471C553CFFF8707FF2C59FB7AAB03086A* L_10 = V_1;
-		if ((!(((RuntimeObject*)(Action_1_tC867D66471C553CFFF8707FF2C59FB7AAB03086A*)L_9) == ((RuntimeObject*)(Action_1_tC867D66471C553CFFF8707FF2C59FB7AAB03086A*)L_10))))
-		{
-			goto IL_0007;
-		}
-	}
-	{
-		return;
-	}
-}
-// System.Void UnityEngine.XR.XRInputSubsystem::remove_trackingOriginUpdated(System.Action`1<UnityEngine.XR.XRInputSubsystem>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInputSubsystem_remove_trackingOriginUpdated_m6A04D2813F1D4A37C013BA00EBC862D1EEA7473E (XRInputSubsystem_tFECE6683FCAEBF05BAD05E5D612690095D8BAD34* __this, Action_1_tC867D66471C553CFFF8707FF2C59FB7AAB03086A* ___0_value, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_tC867D66471C553CFFF8707FF2C59FB7AAB03086A_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	Action_1_tC867D66471C553CFFF8707FF2C59FB7AAB03086A* V_0 = NULL;
-	Action_1_tC867D66471C553CFFF8707FF2C59FB7AAB03086A* V_1 = NULL;
-	Action_1_tC867D66471C553CFFF8707FF2C59FB7AAB03086A* V_2 = NULL;
-	{
-		Action_1_tC867D66471C553CFFF8707FF2C59FB7AAB03086A* L_0 = __this->___trackingOriginUpdated_2;
-		V_0 = L_0;
-	}
-
-IL_0007:
-	{
-		Action_1_tC867D66471C553CFFF8707FF2C59FB7AAB03086A* L_1 = V_0;
-		V_1 = L_1;
-		Action_1_tC867D66471C553CFFF8707FF2C59FB7AAB03086A* L_2 = V_1;
-		Action_1_tC867D66471C553CFFF8707FF2C59FB7AAB03086A* L_3 = ___0_value;
-		Delegate_t* L_4;
-		L_4 = Delegate_Remove_m8B7DD5661308FA972E23CA1CC3FC9CEB355504E3(L_2, L_3, NULL);
-		V_2 = ((Action_1_tC867D66471C553CFFF8707FF2C59FB7AAB03086A*)Castclass((RuntimeObject*)L_4, Action_1_tC867D66471C553CFFF8707FF2C59FB7AAB03086A_il2cpp_TypeInfo_var));
-		Action_1_tC867D66471C553CFFF8707FF2C59FB7AAB03086A** L_5 = (&__this->___trackingOriginUpdated_2);
-		Action_1_tC867D66471C553CFFF8707FF2C59FB7AAB03086A* L_6 = V_2;
-		Action_1_tC867D66471C553CFFF8707FF2C59FB7AAB03086A* L_7 = V_1;
-		Action_1_tC867D66471C553CFFF8707FF2C59FB7AAB03086A* L_8;
-		L_8 = InterlockedCompareExchangeImpl<Action_1_tC867D66471C553CFFF8707FF2C59FB7AAB03086A*>(L_5, L_6, L_7);
-		V_0 = L_8;
-		Action_1_tC867D66471C553CFFF8707FF2C59FB7AAB03086A* L_9 = V_0;
-		Action_1_tC867D66471C553CFFF8707FF2C59FB7AAB03086A* L_10 = V_1;
-		if ((!(((RuntimeObject*)(Action_1_tC867D66471C553CFFF8707FF2C59FB7AAB03086A*)L_9) == ((RuntimeObject*)(Action_1_tC867D66471C553CFFF8707FF2C59FB7AAB03086A*)L_10))))
-		{
-			goto IL_0007;
-		}
-	}
-	{
-		return;
-	}
-}
 // System.Void UnityEngine.XR.XRInputSubsystem::InvokeTrackingOriginUpdatedEvent(System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRInputSubsystem_InvokeTrackingOriginUpdatedEvent_mD9F93C1B2F0BCDE37190DC500F9D93B273362EEB (intptr_t ___0_internalPtr, const RuntimeMethod* method) 
 {

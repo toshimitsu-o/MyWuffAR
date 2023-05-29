@@ -174,7 +174,7 @@ class VisualEffect;
 class WindZone; 
 namespace UI { class CanvasRenderer; } template <> void RegisterUnityClass<UI::CanvasRenderer>(const char*);
 class Collider; template <> void RegisterUnityClass<Collider>(const char*);
-class BoxCollider; 
+class BoxCollider; template <> void RegisterUnityClass<BoxCollider>(const char*);
 class CapsuleCollider; 
 class CharacterController; 
 class MeshCollider; template <> void RegisterUnityClass<MeshCollider>(const char*);
@@ -304,7 +304,7 @@ void RegisterAllClasses()
 {
 void RegisterBuiltinTypes();
 RegisterBuiltinTypes();
-	//Total: 74 non stripped classes
+	//Total: 75 non stripped classes
 	//0. AnimationClip
 	RegisterUnityClass<AnimationClip>("Animation");
 	//1. Animator
@@ -431,27 +431,29 @@ RegisterBuiltinTypes();
 	RegisterUnityClass<ParticleSystem>("ParticleSystem");
 	//62. ParticleSystemRenderer
 	RegisterUnityClass<ParticleSystemRenderer>("ParticleSystem");
-	//63. Collider
+	//63. BoxCollider
+	RegisterUnityClass<BoxCollider>("Physics");
+	//64. Collider
 	RegisterUnityClass<Collider>("Physics");
-	//64. MeshCollider
+	//65. MeshCollider
 	RegisterUnityClass<MeshCollider>("Physics");
-	//65. PhysicMaterial
+	//66. PhysicMaterial
 	RegisterUnityClass<PhysicMaterial>("Physics");
-	//66. PhysicsManager
+	//67. PhysicsManager
 	RegisterUnityClass<PhysicsManager>("Physics");
-	//67. Rigidbody
+	//68. Rigidbody
 	RegisterUnityClass<Rigidbody>("Physics");
-	//68. SphereCollider
+	//69. SphereCollider
 	RegisterUnityClass<SphereCollider>("Physics");
-	//69. Physics2DSettings
+	//70. Physics2DSettings
 	RegisterUnityClass<Physics2DSettings>("Physics2D");
-	//70. TextRendering::Font
+	//71. TextRendering::Font
 	RegisterUnityClass<TextRendering::Font>("TextRendering");
-	//71. UI::Canvas
+	//72. UI::Canvas
 	RegisterUnityClass<UI::Canvas>("UI");
-	//72. UI::CanvasGroup
+	//73. UI::CanvasGroup
 	RegisterUnityClass<UI::CanvasGroup>("UI");
-	//73. UI::CanvasRenderer
+	//74. UI::CanvasRenderer
 	RegisterUnityClass<UI::CanvasRenderer>("UI");
 
 }

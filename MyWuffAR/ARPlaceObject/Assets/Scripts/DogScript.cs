@@ -19,8 +19,10 @@ public class DogScript : MonoBehaviour
     private Animator animator;
     //The current state for the dog, as defiend by the enum at the top. 
     private DogState dogState;
+
+    private Vector3 targetPosition;
     //This defines how close the ball needs to be to a thing for it to count as 'close'
-    private float ballClose = 2.0f;
+    private float ballClose = 0.5f;
     //A varaible to store if the ball has a rigidbody and if it is kinematic
     private bool ballKinematic = false;
     //Does the dog currently have the ball
@@ -38,6 +40,8 @@ public class DogScript : MonoBehaviour
         animator = GetComponent<Animator>();
         //set the intial state to be idle
         dogState = DogState.Idle;
+
+        targetPosition = player.transform.position;
     }
 
     //function that returns if the ball needs fetching right now 
@@ -66,6 +70,7 @@ public class DogScript : MonoBehaviour
 
     // Update is called once per frame
     void Update() {
+        ball = GameObject.FindGameObjectWithTag("Ball");
         ////////
         // Sitting Behaviour
         ////////
@@ -126,36 +131,35 @@ public class DogScript : MonoBehaviour
             //this is similar, but instead of traveling to the ball, we travel to the player object
             } else {
                 //check how far from the player the dog is
-                float dist = Vector3.Distance(transform.position, player.transform.position);
-                if (dist < 4.0f) {
+                float dist = Vector3.Distance(transform.position, targetPosition);
+                if (dist < 0.8f) {
                     //if the dog is close to the player, that means we need to drop the ball /and we set the state back to idle, but with the timer set so it stays idle for a while.
                     idleTimer = Random.Range(3, 5);
                     dogState = DogState.Idle;
                     //here we drop the ball by setting it's parent object to mull and renabling physics it if has it.
-                    // destoy ball component
+                    ball.transform.parent = null;
+                    if (ball.GetComponent<Rigidbody>()) {
+                        ball.GetComponent<Rigidbody>().isKinematic = ballKinematic;
+                    }
+                    // Hide the ball
                     ball.transform.position = new Vector3(0, -10, 0);
-                    // ball.transform.parent = null;
-                    // if (ball.GetComponent<Rigidbody>()) {
-                    //     //ball.GetComponent<Rigidbody>().isKinematic = ballKinematic;
-                    // }
                     //lastly we update our flag to say we've dropped the ball 
                     hasBall = false;
                     //Lastly we handle if we have the ball but have'nt got back to the player object yet
                 } else {
-                    //first we must rotate to face the ball
-                    Vector3 playerPos = player.transform.position;
+
                     //we can elimate vertical rotation by setting our look target to be at the same
                     // y axis value as the dog.
-                    playerPos.y = transform.position.y;
+                    targetPosition.y = transform.position.y;
                     //call lookat to point our object at the ball. 
-                    transform.LookAt(playerPos);
+                    transform.LookAt(targetPosition);
                     //This will cause the dog ot look in the oppersite direction however 
                     //we can fix this by just turn it 180 degrees after calling lookup. 
                     transform.Rotate(new Vector3(0, 180, 0));
 
                     //we are now facing the player, now we need to move towards it.
                     //get the vector towards the player
-                    Vector3 direction = player.transform.position - transform.position;
+                    Vector3 direction = targetPosition - transform.position;
                     //get rid any y axi movement so we don't get a flying dog 
                     direction.y = 0;
                     //always normalise 

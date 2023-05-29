@@ -2,6 +2,7 @@
 	<assembly fullname="Assembly-CSharp">
 		<type fullname="AnchorCreator" preserve="nothing"/>
 		<type fullname="DogScript" preserve="nothing"/>
+		<type fullname="HitDetection" preserve="nothing"/>
 		<type fullname="PlaceBall" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.InputSystem">
@@ -69,6 +70,7 @@
 		<type fullname="UnityEngine.AnimationClip" preserve="nothing"/>
 		<type fullname="UnityEngine.Animator" preserve="nothing"/>
 		<type fullname="UnityEngine.Behaviour" preserve="nothing"/>
+		<type fullname="UnityEngine.BoxCollider" preserve="nothing"/>
 		<type fullname="UnityEngine.Camera" preserve="nothing"/>
 		<type fullname="UnityEngine.Collider" preserve="nothing"/>
 		<type fullname="UnityEngine.Component" preserve="nothing"/>
@@ -106,8 +108,5 @@
 	</assembly>
 	<assembly fullname="UnityEngine.SpatialTracking">
 		<type fullname="UnityEngine.SpatialTracking.TrackedPoseDriver" preserve="nothing"/>
-	</assembly>
-	<assembly fullname="UnityEngine.XR.LegacyInputHelpers">
-		<type fullname="UnityEditor.XR.LegacyInputHelpers.CameraOffset" preserve="nothing"/>
 	</assembly>
 </linker>

@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 8882538277894620577}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.8, z: 4.17}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -111,7 +111,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29c13efd52c1f4fca8b274b6794f1cd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionPrefab: {fileID: 3939541003602216258, guid: d9496d2c6e5fd48309fffdd438bbd090, type: 3}
+  explosionPrefab: {fileID: 3939541003602216258, guid: d9496d2c6e5fd48309fffdd438bbd090,
+    type: 3}
+  maxScore: 2
+  flag: {fileID: 0}
+  scoreText: {fileID: 0}
+  tagName: Ball
 --- !u!65 &7211731668588070815
 BoxCollider:
   m_ObjectHideFlags: 0

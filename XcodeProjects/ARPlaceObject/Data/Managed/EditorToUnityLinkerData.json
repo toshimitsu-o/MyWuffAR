@@ -55,6 +55,13 @@
             "usedInScenes": []
         },
         {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "HitDetection",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
             "managedAssemblyName": "",
             "nativeClass": "LevelGameManager",
             "fullManagedTypeName": "",
@@ -212,13 +219,6 @@
             "usedInScenes": []
         },
         {
-            "managedAssemblyName": "UnityEngine.XR.LegacyInputHelpers.dll",
-            "nativeClass": "",
-            "fullManagedTypeName": "UnityEditor.XR.LegacyInputHelpers.CameraOffset",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
             "managedAssemblyName": "UnityEngine.dll",
             "nativeClass": "AnimationClip",
             "fullManagedTypeName": "UnityEngine.AnimationClip",
@@ -241,6 +241,15 @@
             "nativeClass": "Behaviour",
             "fullManagedTypeName": "UnityEngine.Behaviour",
             "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/ExampleAssets/Scenes/SampleScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "BoxCollider",
+            "fullManagedTypeName": "UnityEngine.BoxCollider",
+            "moduleName": "Physics",
             "usedInScenes": [
                 "Assets/ExampleAssets/Scenes/SampleScene.unity"
             ]

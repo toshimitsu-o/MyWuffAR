@@ -978,6 +978,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_GameObject_Find();
 		Register_UnityEngine_GameObject_Find();
 
+		//UnityEngine.GameObject UnityEngine.GameObject::FindGameObjectWithTag(System.String)
+		void Register_UnityEngine_GameObject_FindGameObjectWithTag();
+		Register_UnityEngine_GameObject_FindGameObjectWithTag();
+
 		//UnityEngine.Transform UnityEngine.GameObject::get_transform()
 		void Register_UnityEngine_GameObject_get_transform();
 		Register_UnityEngine_GameObject_get_transform();
@@ -2234,10 +2238,6 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Quaternion_AngleAxis_Injected();
 		Register_UnityEngine_Quaternion_AngleAxis_Injected();
 
-		//System.Void UnityEngine.Quaternion::FromToRotation_Injected(UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Quaternion&)
-		void Register_UnityEngine_Quaternion_FromToRotation_Injected();
-		Register_UnityEngine_Quaternion_FromToRotation_Injected();
-
 		//System.Void UnityEngine.Quaternion::Internal_FromEulerRad_Injected(UnityEngine.Vector3&,UnityEngine.Quaternion&)
 		void Register_UnityEngine_Quaternion_Internal_FromEulerRad_Injected();
 		Register_UnityEngine_Quaternion_Internal_FromEulerRad_Injected();
@@ -2245,14 +2245,6 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Quaternion::Inverse_Injected(UnityEngine.Quaternion&,UnityEngine.Quaternion&)
 		void Register_UnityEngine_Quaternion_Inverse_Injected();
 		Register_UnityEngine_Quaternion_Inverse_Injected();
-
-		//System.Void UnityEngine.Quaternion::Lerp_Injected(UnityEngine.Quaternion&,UnityEngine.Quaternion&,System.Single,UnityEngine.Quaternion&)
-		void Register_UnityEngine_Quaternion_Lerp_Injected();
-		Register_UnityEngine_Quaternion_Lerp_Injected();
-
-		//System.Void UnityEngine.Quaternion::Slerp_Injected(UnityEngine.Quaternion&,UnityEngine.Quaternion&,System.Single,UnityEngine.Quaternion&)
-		void Register_UnityEngine_Quaternion_Slerp_Injected();
-		Register_UnityEngine_Quaternion_Slerp_Injected();
 
 	//End Registrations for type : UnityEngine.Quaternion
 
@@ -3604,14 +3596,6 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.UnityLogWriter
 
-	//Start Registrations for type : UnityEngine.Vector3
-
-		//System.Void UnityEngine.Vector3::Slerp_Injected(UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single,UnityEngine.Vector3&)
-		void Register_UnityEngine_Vector3_Slerp_Injected();
-		Register_UnityEngine_Vector3_Slerp_Injected();
-
-	//End Registrations for type : UnityEngine.Vector3
-
 	//Start Registrations for type : UnityEngine.XR.InputDevices
 
 		//System.Boolean UnityEngine.XR.InputDevices::TryGetFeatureValue_Quaternionf(System.UInt64,System.String,UnityEngine.Quaternion&)
@@ -3642,43 +3626,15 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_XR_InputTracking_GetNodeStates_Internal();
 		Register_UnityEngine_XR_InputTracking_GetNodeStates_Internal();
 
-		//System.Void UnityEngine.XR.InputTracking::Recenter()
-		void Register_UnityEngine_XR_InputTracking_Recenter();
-		Register_UnityEngine_XR_InputTracking_Recenter();
-
 	//End Registrations for type : UnityEngine.XR.InputTracking
 
 	//Start Registrations for type : UnityEngine.XR.XRDevice
-
-		//System.Boolean UnityEngine.XR.XRDevice::SetTrackingSpaceType(UnityEngine.XR.TrackingSpaceType)
-		void Register_UnityEngine_XR_XRDevice_SetTrackingSpaceType();
-		Register_UnityEngine_XR_XRDevice_SetTrackingSpaceType();
 
 		//System.Void UnityEngine.XR.XRDevice::DisableAutoXRCameraTracking(UnityEngine.Camera,System.Boolean)
 		void Register_UnityEngine_XR_XRDevice_DisableAutoXRCameraTracking();
 		Register_UnityEngine_XR_XRDevice_DisableAutoXRCameraTracking();
 
 	//End Registrations for type : UnityEngine.XR.XRDevice
-
-	//Start Registrations for type : UnityEngine.XR.XRInputSubsystem
-
-		//System.Boolean UnityEngine.XR.XRInputSubsystem::TryRecenter()
-		void Register_UnityEngine_XR_XRInputSubsystem_TryRecenter();
-		Register_UnityEngine_XR_XRInputSubsystem_TryRecenter();
-
-		//System.Boolean UnityEngine.XR.XRInputSubsystem::TrySetTrackingOriginMode(UnityEngine.XR.TrackingOriginModeFlags)
-		void Register_UnityEngine_XR_XRInputSubsystem_TrySetTrackingOriginMode();
-		Register_UnityEngine_XR_XRInputSubsystem_TrySetTrackingOriginMode();
-
-		//UnityEngine.XR.TrackingOriginModeFlags UnityEngine.XR.XRInputSubsystem::GetSupportedTrackingOriginModes()
-		void Register_UnityEngine_XR_XRInputSubsystem_GetSupportedTrackingOriginModes();
-		Register_UnityEngine_XR_XRInputSubsystem_GetSupportedTrackingOriginModes();
-
-		//UnityEngine.XR.TrackingOriginModeFlags UnityEngine.XR.XRInputSubsystem::GetTrackingOriginMode()
-		void Register_UnityEngine_XR_XRInputSubsystem_GetTrackingOriginMode();
-		Register_UnityEngine_XR_XRInputSubsystem_GetTrackingOriginMode();
-
-	//End Registrations for type : UnityEngine.XR.XRInputSubsystem
 
 	//Start Registrations for type : UnityEngine.XR.XRMeshSubsystem
 
