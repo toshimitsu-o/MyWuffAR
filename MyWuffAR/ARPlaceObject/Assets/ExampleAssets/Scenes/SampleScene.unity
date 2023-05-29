@@ -383,7 +383,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a06bb20ad0474397bc91dea444c9a0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cubePrefab: {fileID: 1549945345534468811, guid: 993e3bc24c15f424da54269e077b34ff,
+  ballPrefab: {fileID: 3631649995503104359, guid: d194941f462564280b82171746a629d9,
+    type: 3}
+  dogPrefab: {fileID: 5438504789645487061, guid: 5bb864e2f9fb0894baf3f84abe46b277,
     type: 3}
 --- !u!4 &212175866532230322
 Transform:
