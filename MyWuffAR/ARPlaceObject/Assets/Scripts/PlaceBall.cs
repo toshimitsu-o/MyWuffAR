@@ -61,8 +61,10 @@ public class PlaceBall : MonoBehaviour
                 // Instatiate the dog prefab in the scene.
                 if (dogInstance == null)
                 {
-                    var dogPosition = hitPosition + new Vector3(1.0f, 0, 0);
-                    dogInstance = Instantiate(dogPrefab, dogPosition, Quaternion.identity);
+                    var dogPosition = hitPosition + new Vector3(2.0f, 0, 0);
+                    dogInstance = dogPrefab;
+                    dogInstance.transform.position = dogPosition;
+                
                 }
             }
         }

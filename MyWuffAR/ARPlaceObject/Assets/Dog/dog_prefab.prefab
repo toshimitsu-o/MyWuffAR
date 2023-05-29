@@ -692,9 +692,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6ac6b00641d64970b15294e83ce6119, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 5843497292548984443, guid: c116b7497ab8ca34c9188965d4295e27, type: 3}
-  ball: {fileID: 3631649995503104359, guid: d194941f462564280b82171746a629d9, type: 3}
-  attachBone: {fileID: 0}
+  player: {fileID: 0}
+  ball: {fileID: 0}
   speed: 2
 --- !u!1 &5613701640530887421
 GameObject:
