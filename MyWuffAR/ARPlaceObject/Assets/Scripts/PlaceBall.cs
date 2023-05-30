@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
+using TMPro;
 
 public class PlaceBall : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class PlaceBall : MonoBehaviour
     Vector3 startScale;
     bool touching = false;
 
+    public TMP_Text text;
     public GameObject ballPrefab;
 
     public GameObject dogPrefab;
@@ -44,6 +46,9 @@ public class PlaceBall : MonoBehaviour
             // If we hit something, place the cube
             if (success && hits.Count > 0)
             {
+                // Empty the text message
+                text.text = "";
+
                 // Get the intersection point where we touched, this is order from closest to farest, get the firtst point.
                 Vector3 hitPosition = hits[0].pose.position;
                 var ballPosition =  hitPosition + new Vector3(0, 1.0f, 0);
