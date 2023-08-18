@@ -4,9 +4,9 @@ AR iPhone app to interact with a virtual pet. A few main features are prototyped
 [Design Document PDF](MyWuffARDesignDocument.pdf)
 ## MyWuffAR Unity projects
 Two Unity projects contain main feature prototypes. They deploy to Xcode to produce iPhone apps.
-### ARImageTracking
+### [ARImageTracking](MyWuffAR/ARImageTracking/)
 It scans image tags and instantiates two different 3D objects.
-### ARPlaceObject
+### [ARPlaceObject](MyWuffAR/ARPlaceObject)
 It accepts a tap action and instantiates a ball object. A dog object with animations fetches the ball to you.
 
 ## Demonstration Video
