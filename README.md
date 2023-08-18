@@ -1,5 +1,5 @@
 # MyWuffAR
-AR iPhone app to interact with a virtual pet. A few main features are prototyped.
+AR iPhone app to interact with a virtual pet. Prototypes of some main features were developed using Unity and deployed via Xcode.
 ## Design Document
 [Design Document PDF](MyWuffARDesignDocument.pdf)
 ## MyWuffAR Unity projects
