@@ -1,7 +1,9 @@
 # MyWuffAR
 AR iPhone app to interact with a virtual pet. Prototypes of some main features were developed using Unity and deployed via Xcode.
-## Design Document
+## Documents
 [Design Document PDF](MyWuffARDesignDocument.pdf)
+[Development Plan PDF](DevelopmentPlan.pdf)
+[Testing Result PDF](TestingResults.pdf)
 ## MyWuffAR Unity projects
 Two Unity projects contain main feature prototypes. They deploy to Xcode to produce iPhone apps.
 ### [ARImageTracking](MyWuffAR/ARImageTracking/)
