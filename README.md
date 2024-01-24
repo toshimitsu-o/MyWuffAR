@@ -15,7 +15,7 @@ It scans image tags and instantiates two different 3D objects.
 It accepts a tap action and instantiates a ball object. A dog object with animations fetches the ball to you.
 
 ## Demonstration Video
-[![Demonstration Video](https://img.youtube.com/vi/6E1z6kBqN7c/0.jpg)](https://www.youtube.com/watch?v=6E1z6kBqN7c)
+[![Demonstration Video](https://img.youtube.com/vi/6E1z6kBqN7c/hqdefault.jpg)](https://www.youtube.com/watch?v=6E1z6kBqN7c)
 
 https://github.com/toshimitsu-o/MyWuffAR/assets/89127228/4a60580d-82f6-48cf-bbd3-c6000323ac59
 
